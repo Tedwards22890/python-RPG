@@ -5,13 +5,10 @@ class monster:
     att=0
     name="none"
 
-    def namer(self):
-        names=["Cerberus","Circe","Fenyx","Hyrda","Ladon","Othrus","Stymphalides"] 
-        self.name= names[random.randint(0,6)]
-
     def __init__(self):
         self.hp = 20 + random.randint(-10,10)
         self.att = 7+ random.randint(-3,3)
+        self.name=self.namer()
 
     def getAtt(self):
         return self.att
@@ -25,4 +22,8 @@ class monster:
 
     def getName(self):
         return self.name
+
+    def namer(self):
+        names=["Cerberus","Circe","Fenyx","Hyrda","Ladon","Othrus","Stymphalides"] 
+        return names[random.randint(0,6)]
     
