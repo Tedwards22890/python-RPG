@@ -17,5 +17,7 @@ class hercules:
         self.hp=self.hp-x
         return self.hp
     
+    
+    
 
 
