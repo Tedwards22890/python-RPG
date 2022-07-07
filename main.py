@@ -1,14 +1,23 @@
 from hercules import hercules
 from monster import monster
 
-m1=monster()
-str=m1.getName()
-print(str)
-print(m1.getAtt())
-print(m1.getHp())
-print("-----------------------------")
-m1=monster()
-str=m1.getName()
-print(str)
-print(m1.getAtt())
-print(m1.getHp())
+
+monsters=[]
+x=0
+monsters.append(monster())
+
+while (x<5):
+    monsters.append(monster())
+    x+=1
+
+for obj in monsters:
+    print(obj.getName(), obj.getHp(), sep =" ")
+
+
+
+
+
+
+
+
+
