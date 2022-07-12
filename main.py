@@ -1,17 +1,26 @@
-from hercules import hercules
-from monster import monster
+from Hercules import Hercules
+from Monster import Monster
 
 
-monsters=[]
-x=0
-monsters.append(monster())
+def combat(herc, mons):
+    while (herc.getHp() >=0 or mons.getHp()>=0):
+        player_hp = herc.getHp()
+        print(x)
+        y=mons.getHp()
+        print(y)
+    
 
-while (x<5):
-    monsters.append(monster())
-    x+=1
 
-for obj in monsters:
-    print(obj.getName(), obj.getHp(), sep =" ")
+
+m1 = Monster()
+player=Hercules()
+x= player.attack()
+print(x)
+
+combat(player,m1)
+
+
+
 
 
 
