@@ -3,7 +3,7 @@ class Monster:
 
     def __init__(self,x):
         self.hp = 75 + random.randint(-10,10)
-        self.att = (10+ random.randint(-3,3))
+        self.att = (25+ random.randint(-3,3))
         self.name=self.namer(x)
 
     def getAtt(self):
@@ -25,7 +25,7 @@ class Monster:
         return names[x]
     
     def randomAttack(self):
-        self.random_lists=["slashes out with its mighty claws striking your chest","bites down on your leg!","stomps on you!","rushes into with blinding speed"]
+        self.random_lists=["slashes out with its mighty claws striking Hercules' chest","bites down on Hercules' leg!","stomps on Hercules'!","rushes into Hercules' with blinding speed"]
         return random.choice(self.random_lists)
 
     
