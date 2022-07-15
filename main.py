@@ -4,10 +4,13 @@ import time
 
 def lost_game():
     print("The final strike bears down on you.")
+    time.sleep(3)
     print("Your strength fades as you fall to the ground.")
     print("The last thing you remember is...")
-    print("Cerberus continues to roam free to this very day")
+    time.sleep(3)
+    print("Cerberus continues to roam free to this very day.")
     print("Game Over!")
+    time.sleep(3)
     print("Try again...")
     quit()
 
@@ -35,7 +38,7 @@ def Attack(herc, mons):
             print(f"You thrust your spear and do {x} damage!")
             mons.addHp(x)
         else:
-            print("Hercules hesitatde too long! (Be sure to press 1, 2 or 3!)")
+            print("Hercules hesitated too long! (Be sure to press 1, 2 or 3!)")
         time.sleep(3)
         if (mons.getHp()<=0):
             print(f"{mons.getName()} has been slain!")
@@ -83,7 +86,7 @@ def RunGame():
     print(f"As you enter the underworld, you hear a loud roaring. A {m2.getName()} steps forward, unwilling to let Hercules pass!")
     player_hp = Attack(player,m2)
     player.setHp(player_hp)
-    print(f"{m2.getName()} falls to the grounds. Hercules continued on, unbothered by lesser creatures of the deep.")
+    print(f"{m2.getName()} falls to the grounds. Hercules continues on, unbothered by lesser creatures of the deep.")
     time.sleep(3)
     print(f"That is when the mighty {m3.getName()} comes into view. But it will not be captured without a fight!")
     Attack(player,m3)
@@ -93,7 +96,7 @@ def RunGame():
     time.sleep(2)
     print(f"Having slain all creatures before him, Hercules returns to Argo to meet king Eurystheus.")
     time.sleep(2)
-    print(f"The people of Argo are once again safe... until Hades begin hatching another plot.")
+    print(f"The people of Argo are once again safe... until Hades hatches another plot.")
     time.sleep(7)
     print()
     print()
@@ -102,9 +105,9 @@ def RunGame():
     time.sleep(3)
     print("Special thanks to:\nDevCodeCamp\nW3Schools\nMary Grace Gascon")
     time.sleep(3)
-    print("Thanks for playing...")
+    print("Thanks for playing!")
     time.sleep(7)
-    print("Until next time!")
+    print("Until next time...")
 
 
 

@@ -25,8 +25,8 @@ class Hercules:
 
     def attack_list(self,x,y):
         self.attacks = [
-            {"name":"Sword Slash","damage":random.choice([45,50,55])},
-            {"name":"Arrow Show", "damage":random.choice([40,50,60])},
+            {"name":"Sword Slash","damage":random.choice([35,40,50])},
+            {"name":"Arrow Show", "damage":random.choice([30,40,55])},
             {"name":"Spear Thrust","damage":random.choice([1,1,100])}            
         ]
         if (y=="damage"):

@@ -3,7 +3,7 @@ class Monster:
 
     def __init__(self,x):
         self.hp = 75 + random.randint(-10,10)
-        self.att = (25+ random.randint(-3,3))
+        self.att = (30+ random.randint(-3,3))
         self.name=self.namer(x)
 
     def getAtt(self):
